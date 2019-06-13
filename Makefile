@@ -1,10 +1,10 @@
 CC=gcc
 CFLAGS += -lncursesw
 TARGETS = ./src/main ./src/gfx
-OBJ = gfx.o main.o
+OBJ = ./src/gfx.o ./src/main.o
 HEADERS = ./src/gfx.h
 
-slidey: gfx.o main.o $(HEADERS)
+slidey: $(OBJ) $(HEADERS)
 	$(CC) $^ -o $@ $(CFLAGS) 
 
 %.o: %.c $(HEADERS)
@@ -12,3 +12,4 @@ slidey: gfx.o main.o $(HEADERS)
 
 clean:
 	rm -f *-o $(TARGETS)
+	rm -f ./slidey
