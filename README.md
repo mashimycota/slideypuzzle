@@ -3,7 +3,7 @@
 CLI version of a square [sliding puzzle](https://en.wikipedia.org/wiki/Sliding_puzzle)
 
 ### How to run
-    git clone https://github.com/tiehuis/2048-cli.git
+    git clone https://github.com/mashimycota/slideypuzzle.git
     make
     ./slidey [# of rows & columns (2-16)]
 
